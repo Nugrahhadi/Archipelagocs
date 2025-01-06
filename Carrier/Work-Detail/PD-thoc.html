@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../ico/favicon.ico"
+      sizes="32x32"
+    />
+    <title>Product Designer - Archipelago Media Komunikasi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Google Sans", sans-serif;
+      }
+
+      body {
+        background-color: #100118;
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .job-detail-section {
+        padding: 120px 20px 60px;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 40px;
+      }
+
+      .job-title-section {
+        display: flex;
+        gap: 20px;
+      }
+
+      .company-logo {
+        width: 64px;
+        height: 64px;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .company-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .job-info h1 {
+        font-size: 32px;
+        margin-bottom: 8px;
+      }
+
+      .company-name {
+        font-size: 18px;
+        color: #999;
+        margin-bottom: 12px;
+      }
+
+      .job-meta {
+        display: flex;
+        gap: 16px;
+        color: #999;
+        font-size: 14px;
+      }
+
+      .apply-btn {
+        background: #d946b2;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.3s;
+      }
+
+      .apply-btn:hover {
+        background: #ce3ca7;
+      }
+
+      .job-content {
+        color: #e5e7eb;
+        line-height: 1.6;
+      }
+
+      .job-content h2 {
+        font-size: 24px;
+        margin: 32px 0 16px;
+        color: #fff;
+      }
+
+      .job-content p {
+        margin-bottom: 16px;
+      }
+
+      .job-content ul {
+        margin-bottom: 24px;
+        padding-left: 24px;
+      }
+
+      .job-content li {
+        margin-bottom: 12px;
+      }
+
+      .social-links {
+        margin-top: 40px;
+        padding-top: 24px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .social-links a {
+        color: #999;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .social-links a:hover {
+        color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        .job-header {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .job-title-section {
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        .job-meta {
+          flex-wrap: wrap;
+        }
+
+        .apply-btn {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html" class="logo">
+        <img src="../Images/logo1.png" alt="Archipelago Logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">
+            About Us
+            <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../Profile/company.html">Company Description</a></li>
+            <li><a href="../Profile/direksi.html">Meet the Team</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">
+            Career
+            <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../Carrier/work.html">Job Opportunity</a></li>
+            <li>
+              <a href="../Carrier/internship.html">Internship Opportunity</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">
+            Connect
+            <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../Connect/tip.html">The Indonesian Press</a></li>
+            <li>
+              <a href="../../Connect/munazara.html">Munazara.co</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="navbar-contact">
+        <a
+          href="https://www.instagram.com/archipelagocs_"
+          target="_blank"
+          class="contact-icon"
+        >
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/pt-archipelago-media-komunikasi/"
+          target="_blank"
+          class="contact-icon"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+
+      <!-- tombol hamburger -->
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <main class="job-detail-section">
+      <div class="job-header">
+        <div class="job-title-section">
+          <div class="company-logo">
+            <img src="../Images/thoc.jpg" alt="THOC Logo" />
+          </div>
+          <div class="job-info">
+            <h1>Product Designer</h1>
+            <div class="company-name">The House of Commons</div>
+            <div class="job-meta">
+              <span><i class="bi bi-geo-alt"></i> Remote</span>
+              <span><i class="bi bi-briefcase"></i> Full-time</span>
+              <span
+                ><i class="bi bi-calendar"></i
+                ><span class="posted-date">Posted Today</span></span
+              >
+              <!-- <span><i class="bi bi-calendar"></i> Posted on Dec 28, 2024</span> -->
+            </div>
+          </div>
+        </div>
+        <a href="#" class="apply-btn">Apply now</a>
+      </div>
+
+      <div class="job-content">
+        <p>
+          The House of Commons is looking for an experienced Product Designer to
+          shape the future of decentralized media. In this role, you'll
+          collaborate with cross-functional teams to drive design for
+          cutting-edge products in the fast-evolving world of digital media.
+        </p>
+
+        <h2>What You'll Do</h2>
+        <ul>
+          <li>
+            Collaborate within a dynamic team to design new products and
+            features for web and mobile, while enhancing and optimizing existing
+            user experiences.
+          </li>
+          <li>
+            Partner closely with Product Managers and Engineers throughout the
+            product lifecycle, from ideation through production.
+          </li>
+          <li>
+            Create wireframes, prototypes, and high-fidelity designs that
+            communicate your design solutions.
+          </li>
+        </ul>
+
+        <h2>Our Stack</h2>
+        <ul>
+          <li>Figma, Adobe Creative Suite</li>
+          <li>Prototyping tools (Principle, Framer)</li>
+          <li>Basic understanding of HTML/CSS</li>
+          <li>Collaboration tools (Notion, Slack)</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <ul>
+          <li>Competitive salary package</li>
+          <li>Health insurance coverage</li>
+          <li>Annual learning budget</li>
+          <li>Flexible working hours</li>
+          <li>Remote work options</li>
+        </ul>
+
+        <div class="social-links">
+          <a href="#"
+            ><i class="bi bi-link-45deg"></i> About:
+            https://archipelago.co.id/about</a
+          >
+          <a href="#"
+            ><i class="bi bi-twitter-x"></i> Twitter: @archipelagocs_</a
+          >
+          <a href="#"
+            ><i class="bi bi-discord"></i> Discord:
+            https://discord.archipelago.co.id</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-left">
+          <p class="managed-by">Managed by</p>
+          <div class="foundation-name">
+            <img
+              src="../Images/footer-logo.png"
+              alt="Archipelago Media Komunikasi"
+              class="foundation-logo"
+            />
+          </div>
+
+          <!-- Social Icons -->
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/archipelagocs_"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/pt-archipelago-media-komunikasi/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="http://wa.me/6283197391127" class="social-icon"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+
+          <p class="copyright">
+            © PT Archipelago Media Komunikasi. All rights reserved.
+          </p>
+        </div>
+
+        <!-- Center Section -->
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>ARCHIPELAGO</h3>
+            <ul>
+              <li><a href="#">Company Description</a></li>
+              <li><a href="#">Meet the Team</a></li>
+              <li><a href="#">Job Opportunity</a></li>
+              <li><a href="#">Internship Opportunity</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>CONNECT</h3>
+            <ul>
+              <li><a href="#">The Indonesian Press</a></li>
+              <li><a href="#">Munazara.co</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+      const POST_TIME_KEY = "job_post_time";
+
+      function initializePostTime() {
+        if (!localStorage.getItem(POST_TIME_KEY)) {
+          localStorage.setItem(POST_TIME_KEY, new Date().toISOString());
+        }
+
+        const postedTime = localStorage.getItem(POST_TIME_KEY);
+        document
+          .querySelector(".posted-date")
+          .setAttribute("data-posted", postedTime);
+      }
+
+      function timeAgo(dateString) {
+        const date = new Date(dateString);
+        const now = new Date();
+        const secondsAgo = Math.floor((now - date) / 1000);
+
+        if (secondsAgo < 5) {
+          return "Just now";
+        } else if (secondsAgo < 60) {
+          return `${secondsAgo} seconds ago`;
+        } else if (secondsAgo < 3600) {
+          const minutes = Math.floor(secondsAgo / 60);
+          return `${minutes} minute${minutes > 1 ? "s" : ""} ago`;
+        } else if (secondsAgo < 86400) {
+          const hours = Math.floor(secondsAgo / 3600);
+          return `${hours} hour${hours > 1 ? "s" : ""} ago`;
+        } else {
+          const days = Math.floor(secondsAgo / 86400);
+          return `${days} day${days > 1 ? "s" : ""} ago`;
+        }
+      }
+
+      function updateAllTimestamps() {
+        const timestamps = document.querySelectorAll(".posted-date");
+        timestamps.forEach((element) => {
+          const postedDate = element.getAttribute("data-posted");
+          element.textContent = timeAgo(postedDate);
+        });
+      }
+
+      // Inisialisasi waktu posting saat halaman dimuat
+      document.addEventListener("DOMContentLoaded", () => {
+        initializePostTime();
+        updateAllTimestamps();
+      });
+
+      setInterval(updateAllTimestamps, 1000);
+    </script>
+  </body>
+</html>
